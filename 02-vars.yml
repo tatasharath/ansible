@@ -3,7 +3,7 @@
   vars:
   URL: play.google.com
 
-tasks: 
+  tasks:
     - name: Printing the variable
       ansible.builtin.debug:
         msg: value of the URL is {{URL}}
