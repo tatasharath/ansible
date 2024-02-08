@@ -1,7 +1,7 @@
 - name: Demo on vars usage
   hosts: all
   vars:
-  URL: play.google.com
+    URL: play.google.com
 
   tasks:
     - name: Printing the variable
