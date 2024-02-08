@@ -7,3 +7,8 @@
     - name: Printing the variable
       ansible.builtin.debug:
         msg: value of the URL is {{URL}}
+
+  tasks:
+    - name: Printing the variables
+      ansible.builtin.debug:
+        msg: value of the URL's is "{{google.com}}"
