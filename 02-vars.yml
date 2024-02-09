@@ -2,6 +2,10 @@
   hosts: all
   vars:
     URL: play.google.com
+  vars_prompt:
+    - name: URNAME
+      prompt: Enter your name 
+      private: false   
 
   tasks:
     - name: Printing the variable
@@ -14,6 +18,10 @@
       vars:
        URL: task.google.com
 
-    - name: using undelated variable
+    # - name: using undelated variable
+    #   ansible.builtin.debug:
+    #      msg: value of the URLT is {{URLT}}
+    
+    - name: Printing prompt variable  
       ansible.builtin.debug:
-         msg: value of the URLT is {{URLT}}     
+        msg: Name of the person is {{URNAME}}   
