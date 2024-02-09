@@ -16,4 +16,4 @@
 
     - name: using undelated variable
       ansible.builtin.debug:
-      msg: value of the URLT is {{URLT}}     
+         msg: value of the URLT is {{URLT}}     
