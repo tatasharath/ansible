@@ -15,5 +15,5 @@
        URL: task.google.com
 
     - name: using undelated variable
-      ansible.bulitin.debug:
+      ansible.builtin.debug:
       mesg: value of the URLT is {{URLT}}     
