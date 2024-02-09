@@ -12,4 +12,8 @@
       ansible.builtin.debug:
         msg: value of the URL's is {{URL}}
       vars:
-       URL: task.google.com      
+       URL: task.google.com
+
+    - name: using undelated variable
+      ansible.bulitin.debug:
+      mesg: value of the URLT is {{URLT}}     
